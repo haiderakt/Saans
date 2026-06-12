@@ -15,7 +15,7 @@ st.set_page_config(
     page_title="Saans - Lahore AQI Forecaster",
     page_icon="💨",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # Custom premium CSS styling (Dark theme glassmorphism)
@@ -119,13 +119,11 @@ st.markdown("""
 
 # 1. Title Banner
 st.markdown('<div class="main-title">💨 SAANS</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">State-of-the-Art Transformer AQI Forecasting Dashboard for Lahore, Pakistan</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">State-of-the-Art Transformer AQI Forecasting Dashboard for Lahore, Pakistan<br><span style="font-size: 0.95rem; color: #64ffda; opacity: 0.85;">📍 Location: Lahore (31.5204° N, 74.3587° E)</span></div>', unsafe_allow_html=True)
 
-# Setup Sidebar
-st.sidebar.markdown("### ⚙️ System Controls")
+# Coordinates
 latitude = 31.5204
 longitude = 74.3587
-st.sidebar.info(f"📍 **Location**: Lahore\n🌐 **Coordinates**: {latitude}° N, {longitude}° E")
 
 # Load configuration and initialize
 @st.cache_resource
