@@ -68,9 +68,4 @@ The dense core of predictions aligns tightly with the perfect forecast line ($y=
 Residual values are well-bounded. The slight positive residual bias on clean days represents the intentional safety margin introduced by the asymmetric loss to prevent under-warning the public.
 ![Residual Plot](plots/residual_plot.png)
 
----
 
-## Web Dashboard Preview & Hosting
-The dashboard is built with Streamlit and features a dark glassmorphic design. You can deploy it for free on Streamlit Community Cloud:
-1. Push this folder to GitHub.
-2. Link the repository to [share.streamlit.io](https://share.streamlit.io/) with `app.py` as the entrypoint.
